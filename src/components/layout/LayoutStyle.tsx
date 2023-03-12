@@ -4,8 +4,10 @@ import {createGlobalStyle} from "styled-components";
 
 
 
-
 const LayoutStyle = createGlobalStyle`
+  html{
+    font-size: calc(10px + 1vw);
+  }
   body {
     margin: 0;
     padding: 0;
@@ -16,6 +18,16 @@ const LayoutStyle = createGlobalStyle`
     padding:0;
     margin:0;
     box-sizing: border-box;
+  }
+  .App{
+    width: min(100vw,100%);
+    min-height: 100vh;
+    overflow: hidden;
+    padding:.5em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
   }
 `
 
